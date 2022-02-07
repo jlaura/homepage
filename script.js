@@ -277,10 +277,11 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
     button.classList.add("clear");
     // Set attributes
     card.setAttribute("draggable", true);
-    img.setAttribute("src", "./assets/images/icon-cross.svg");
+    img.setAttribute("src", "./assets/icon-cross.svg");
     img.setAttribute("alt", "Clear it");
     cbInput.setAttribute("type", "checkbox");
     // set todo item for card
+    console.log(item);
     item.textContent = todo.item;
     // if completed -> add respective class / attribute
     if (todo.isCompleted) {
